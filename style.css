@@ -1,16 +1,126 @@
 /* Type your code here */
 
-
 /* change the font family and spacing as per your project font */
-.footer{
-    display:flex;
-    flex-direction: row;
-    align-content: flex-end;
+body {
+	background-image: url("/assets/background-image1.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding: 50px;
+}
+
+nav {
+	display: flex;
+	justify-content: flex-end;
+}
+
+section h1 {
+	font-size: 50px;
+	font-weight: 500;
+}
+
+#box1 {
+	background-color: red;
+	padding: 5px;
+	margin-right: 32.5em;
+}
+
+
+#box1 ul {
+	text-decoration: none;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+li {
+	text-decoration: none;
+}
+
+.list {
+	background-color: white;
+	border-radius: 2px;
+	border-style: solid;
+	border-color: black;
+	border-collapse: collapse;
+	width: 950px;
+	height: 600px;
+	position: absolute;
+}
+
+.list tr td {
+	text-decoration: none;
+}
+
+th,
+td {
+	border: solid 1px;
+	border-right: none;
+	border-left: none;
+	border-collapse: collapse;
+}
+
+.popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+	width: 30%;
 	position: relative;
-	top: 750px;
+	transition: all 5s ease-in-out;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+
+.popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+
+.button {
+	font-size: 1em;
+	padding: 10px;
+	color: #000000;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+}
+
+
+
+.popup .close:hover {
+	color: #06D85F;
+}
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	align-content: flex-end;
+	position: relative;
+	top: 650px;
 	margin-left: 80px;
 	font-size: 18px;
 	font-family: Nunito Sans;
-    font-style: normal;
-    
+	font-style: normal;
 }
